@@ -1,0 +1,14 @@
+classDiagram
+  class Scene {
+    id string
+    name string
+    kind SceneKind
+    tag string
+    description string
+    palette string[]
+  }
+  class SceneRegistry {
+    SCENES Scene[]
+    SCENE_BY_ID map
+  }
+  SceneRegistry --> Scene

@@ -1,0 +1,10 @@
+flowchart LR
+  U[Visitor] --> L[Landing /]
+  L --> A[Arena /arena]
+  L --> M[Motion /motion]
+  L --> Au[Audio /audio]
+  L --> P[Prompts /prompts]
+  L --> V[Vault /vault]
+  A --> S[LoomScene.tsx Three.js]
+  P --> D[prompts.json 5200]
+  V --> B[MODEL_BUILDERS vault.ts]

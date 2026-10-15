@@ -1,0 +1,11 @@
+sequenceDiagram
+  participant User
+  participant UI
+  participant WebGL
+  participant Audio
+  User->>UI: select scene
+  UI->>WebGL: mount LoomScene kind
+  WebGL-->>UI: render frames
+  User->>UI: play track
+  UI->>Audio: AudioContext node graph
+  Audio-->>User: scheduled oscillators

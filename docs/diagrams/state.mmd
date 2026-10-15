@@ -1,0 +1,6 @@
+stateDiagram-v2
+  [*] --> Idle
+  Idle --> Playing: select scene
+  Playing --> Paused: toggle
+  Paused --> Playing: toggle
+  Playing --> Idle: navigate away

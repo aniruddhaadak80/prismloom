@@ -1,0 +1,7 @@
+flowchart LR
+  PR[Pull Request] --> CI[GitHub Actions]
+  CI --> TC[typecheck]
+  CI --> Lint
+  CI --> Test
+  CI --> Build
+  Build --> Vercel[Vercel Deploy]
