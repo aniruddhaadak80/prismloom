@@ -8,4 +8,4 @@ Thanks for improving PRISMLOOM! Please:
 4. Add tests for new behavior where reasonable.
 
 ## Topics
-- `webgl`, `threejs`, `framer-motion`, `generative-art`, `creative-coding`
+- `webgl`, `threejs`, `framer-motion`, `generative-art`, `creative-coding
