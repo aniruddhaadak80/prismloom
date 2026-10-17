@@ -1,0 +1,10 @@
+version: "3.8"
+services:
+  agent:
+    build: ./services/agent
+    ports:
+      - "8000:8000"
+  relay:
+    build: ./services/relay
+    ports:
+      - "8081:8081"

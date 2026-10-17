@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#05060a"/>
+  <circle cx="600" cy="315" r="300" fill="#0a0e22" opacity="0.9"/>
+  <text x="600" y="320" font-family="sans-serif" font-weight="900" font-size="110" fill="#7cf7ff" text-anchor="middle">PRISMLOOM</text>
+  <text x="600" y="410" font-family="sans-serif" font-weight="600" font-size="40" fill="#e7ecff" text-anchor="middle">Prompt → World</text>
+  <text x="600" y="490" font-family="sans-serif" font-size="26" fill="#7b89b8" text-anchor="middle">Open Graph image — WebGL · Motion · Audio · Prompts</text>
+</svg>
