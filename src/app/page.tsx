@@ -1,5 +1,3 @@
-import TopNav from "@/components/nav/TopNav";
-
 const FEATURES = [
   { href: "/arena", title: "WebGL Arena", desc: "16 live Three.js scenes — flock, galaxy, vortex, helix. Cursor-reactive.", tag: "WebGL" },
   { href: "/4d", title: "4D Tesseract", desc: "Eight cubes offset in w, projected into 3D. A real fourth-dimension playground.", tag: "4D" },
@@ -15,7 +13,6 @@ const FEATURES = [
 export default function Home() {
   return (
     <main className="min-h-screen flex flex-col">
-      <TopNav />
       <section className="relative overflow-hidden flex-1 px-6 py-24">
         <div className="absolute inset-0 grid-bg opacity-60 pointer-events-none" />
         <div className="relative max-w-6xl mx-auto text-center">
