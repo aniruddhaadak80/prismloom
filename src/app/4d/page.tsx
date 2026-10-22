@@ -28,9 +28,9 @@ export default function FourDPage() {
     scene.add(new THREE.AmbientLight(0x222244, 0.6));
 
     let raf = 0;
-    const animate = (t: number) => {
-      raf = requestAnimationFrame(() => animate(t));
-      const tt = t * 0.001;
+    const animate = (now: number) => {
+      raf = requestAnimationFrame(animate);
+      const tt = now * 0.001;
       // 4D rotation: rotate xw and yw planes, project w into z
       for (let i = 0; i < 8; i++) {
         const wOffset = (i - 3.5) * 22; // w in 4D
@@ -45,7 +45,7 @@ export default function FourDPage() {
       }
       renderer.render(scene, camera);
     };
-    animate(0);
+    animate(performance.now());
     const ro = new ResizeObserver(() => { width = el.clientWidth; height = el.clientHeight; camera.aspect = width / height; camera.updateProjectionMatrix(); renderer.setSize(width, height); });
     ro.observe(el);
     return () => { cancelAnimationFrame(raf); ro.disconnect(); renderer.dispose(); el.innerHTML = ""; };
